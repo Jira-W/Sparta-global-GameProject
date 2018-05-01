@@ -282,11 +282,27 @@ function gameLoop() {
   missile.fire();
   checkCollision();
   bossSpawn();
-  checkCollisionBoss()
-
+  checkCollisionBoss();
 
 };
+function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function(){
+        this.sound.play();
+    }
+    this.stop = function(){
+        this.sound.pause();
+    }
+};
+var myMusic;
+myMusic = new sound("./sound/background.mp3");
+myMusic.play()
 
 setInterval(function() {
   gameLoop();
-}, 1000 / 60);
+}, 1000 / 60);x
