@@ -3,25 +3,55 @@
 
 <head>
   <meta charset="utf-8">
-  <title>MyGame</title>
+  <title>Space Invaders</title>
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
+  <div id="startScreen">
+    <img src="image/SpaceInvaders.gif" id="logo">
+    <br>
+    <input id="startGameButton" type="button" value="Start Game" onclick="startGame()">
+    <div id="instruction">
+      <h2>CONTROLS</h2> </div>
+    <div id="controls">
+      <img src="image/spacebar.png" id="spacebar">
+      <img src="image/arrow.png" id="arrowKeys">
+    </div>
+    <h2 id="fire">Fire</h2>
+    <h2 id="movement">Movement</h2>
+  </div>
+  <div id="background">
+    <div id="fighter"></div>
+    <div id="boss"></div>
+    <div id="missile"></div>
+    <div id="enemies"></div>
+  <div class="health-bar" data-total="100" data-value="100">
+      <div id="bar" class="bar"></div>
+    </div>
+  </div>
+  <div id="loseScreen">
+    <form>
+      <input id="playAgain" TYPE="button" onClick="history.go(0)" VALUE="Play Again">
+    </form>
+  </div>
+  <div id="winScreen">
+    <br>
+    <h1 id="winText">YOU WIN!</h1>
+    <br>
+    <form>
+      <input id="playAgain" TYPE="button" onClick="history.go(0)" VALUE="Play Again">
+    </form>
+  </div>
 
 
-      <div id="background">
-          <div id="fighter"></div>
-          <div id="boss"></div>
-          <div id="missile"></div>
-          <div id="enemies"></div>
-      </div>
-
-
-
-
-<script src="js/main.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/main.js" type="text/javascript"></script>
 </body>
 
 </html>
