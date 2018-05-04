@@ -1,3 +1,4 @@
+// Game Component Variables-------
 var heroMoveSpeed = 7;
 var rightPressed = false;
 var leftPressed = false;
@@ -7,7 +8,9 @@ var missile = new missile();
 var missiles = [];
 var bossHealth = 30;
 var playerHealth = 100;
-// HealthBar Function & variables-------
+//------------------------------------------
+
+// HealthBar Function & Variables-------
 var hBar = $('.health-bar');
 var totalHealth = hBar.data('total');
 var currentHealth = hBar.data('value');
@@ -186,7 +189,7 @@ function random(size) {
   return Math.random() * size + 1
 };
 
-
+// Object constructor & Render of objects---------------
 var fighter = new Object();
 fighter.element = 'fighter';
 fighter.x = 500;
@@ -208,9 +211,9 @@ function setPosition(sprite) {
   e.style.width = sprite.w + 'px';
   e.style.height = sprite.h + 'px';
 };
+// ----------------------------------------
 
-
-// // Movement Loops---------------
+// Movement Loops---------------
 $(document).keydown(function(x) {
 
   if (x.keyCode === 37) {
@@ -349,6 +352,7 @@ function winCondition() {
   }
 };
 //-------------------------------//
+//Missile function-------------//
 function missile() {
   this.velocity = -12;
   this.missileArr = [];
@@ -374,7 +378,8 @@ function missile() {
     };
   };
 };
-
+//-------------------------------//
+//Collision and  Enemies Render-------------//
 function bossSpawn() {
   if (enemies.length <= 0 && playerHealth >0) {
     setPosition(boss);
@@ -389,8 +394,6 @@ function bossSpawn() {
     }
   }
 };
-
-
 
 function checkCollision() {
   for (var enemy = 0; enemy < enemies.length; enemy++) {
@@ -442,6 +445,7 @@ function checkCollisionBoss() {
     };
   };
 };
+//-------------------------------//
 // Game Screens Function-------------//
 var loseScreen = document.getElementById('loseScreen');
 var gameScreen = document.getElementById('background');

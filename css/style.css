@@ -1,7 +1,7 @@
 body{
   text-align: center;
   font-family: 'Do Hyeon', sans-serif;
-  background-image: url("../image/test3.jpg");
+  background-image: url("../image/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -168,8 +168,6 @@ h2 {
   position: relative;
   transition: width .5s linear;
 }
-
-
 #playAgain{
   margin-top: 450px;
   background-color: Black;
