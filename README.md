@@ -24,7 +24,7 @@ Download the project folder.
 Sparta-Global-Game-Project
 ```
 
-Make sure every component is in the same folder as the index.html files. 
+Make sure every component is in the same folder as the index.html file. 
 
 
 ## Built With
