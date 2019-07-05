@@ -1,0 +1,177 @@
+body{
+  text-align: center;
+  font-family: 'Do Hyeon', sans-serif;
+  background-image: url("../image/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#startScreen{
+  background-color: black;
+  position: relative;
+  height: 700px;
+  width: 1000px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  margin: 0 auto;
+  background-color: black;
+}
+#logo{
+  margin-top: 35px;
+  width: 400px;
+  height: 20 0px;
+}
+#startGameButton{
+  background-color: Black;
+  font-weight: bold;
+  color: gold;
+  font-size: 20px;
+  margin: 100px auto 0 auto;
+  font-style;
+  width: 150px;
+  height: 50px;
+}
+#spacebar{
+  margin-top: 35px;
+  width: 200px;
+  height: 70px;
+}
+#arrowKeys{
+  margin-left: 80px;
+  width: 200px;
+  height: 90px;
+}
+#instruction{
+  margin-right: 40px;
+  margin-top: 60px;
+}
+#controls{
+  margin-top: 15px;
+}
+
+h2 {
+  margin-left: 40px;
+  display: inline-block;
+  color: gold;
+  font-size: 20px;
+}
+#fire{
+  margin-right: 166px;
+}
+#movement{
+  margin-left: 50px;
+}
+
+#loseScreen{
+  background-image: url("../image/gameover2.gif");
+  position: relative;
+  height: 700px;
+  width: 1000px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  margin: 0 auto;
+}
+#winScreen{
+  background-image: url("../image/winScreen.gif");
+  position: relative;
+  height: 700px;
+  width: 1000px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  margin: 0 auto;
+  background-color: black;
+}
+#winText{
+  text-align: center;
+  width: 1000px;
+  color: gold;
+}
+#background {
+  background-image: url("../image/background3.png");
+  height: 700px;
+  width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
+#fighter {
+  background-image: url("../image/spaceship.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+#boss {
+  background-image: url("../image/boss2.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+
+#missile {
+  position: absolute;
+}
+
+.missile {
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  background-image: url("../image/missile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#enemies {
+  height: 700px;
+  width: 1000px;
+  position: absolute;
+}
+
+.enemy {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-image: url("../image/enemy.gif_c200");
+  background-size: contain;
+  position: absolute;
+}
+.bossEnemy {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-image: url("../image/enemy.gif_c200");
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+}
+.health-bar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 200px;
+  height: 20px;
+  padding: 5px;
+  bottom:0;
+  right:0;
+  position: absolute;
+  background: #ddd;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.bar {
+  background: red;
+  width: 100%;
+  height: 10px;
+  position: relative;
+  transition: width .5s linear;
+}
+#playAgain{
+  margin-top: 450px;
+  background-color: Black;
+  font-weight: bold;
+  color: gold;
+  font-size: 20px;
+}
